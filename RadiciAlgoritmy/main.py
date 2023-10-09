@@ -1,73 +1,78 @@
 import random
+
+
 # Ukol 1: Radici algoritmy
 # Martin Zurek
 
 # Selection Sort
-def selection_sort(pole, typ_razeni):
-    pole = list(pole)
-    for i in range(len(pole)):
+def selection_sort(array, order_type):
+    array = list(array)
+    for i in range(len(array)):
         minimal_index = i
-        for j in range(i+1, len(pole)):
-            if typ_razeni:
-                if pole[minimal_index] > pole[j]:
+        for j in range(i + 1, len(array)):
+            if order_type:
+                if array[minimal_index] > array[j]:
                     minimal_index = j
             else:
-                if pole[minimal_index] < pole[j]:
+                if array[minimal_index] < array[j]:
                     minimal_index = j
-        pole[i], pole[minimal_index] = pole[minimal_index], pole[i]
-    return list(pole)
+        array[i], array[minimal_index] = array[minimal_index], array[i]
+    return list(array)
+
 
 # Bubble Sort
-def bubble_sort(pole, typ_razeni):
-    pole = list(pole)
-    for i in range(len(pole)):
-        for j in range(0, len(pole) - i - 1):
-            if typ_razeni:
-                if pole[j] > pole[j + 1]:
-                    pole[j], pole[j + 1] = pole[j + 1], pole[j]
+def bubble_sort(array, order_type):
+    array = list(array)
+    for i in range(len(array)):
+        for j in range(0, len(array) - i - 1):
+            if order_type:
+                if array[j] > array[j + 1]:
+                    array[j], array[j + 1] = array[j + 1], array[j]
             else:
-                if pole[j] < pole[j + 1]:
-                    pole[j], pole[j + 1] = pole[j + 1], pole[j]
-    return list(pole)
+                if array[j] < array[j + 1]:
+                    array[j], array[j + 1] = array[j + 1], array[j]
+    return list(array)
+
 
 # Insertion Sort
-def insertion_sort(pole, typ_razeni):
-    pole = list(pole)
-    for i in range(1, len(pole)):
-        index = pole[i]
+def insertion_sort(array, order_type):
+    array = list(array)
+    for i in range(1, len(array)):
+        index = array[i]
         j = i - 1
-        while j >= 0 and ((typ_razeni and pole[j] > index) or (not typ_razeni and pole[j] < index)):
-            pole[j + 1] = pole[j]
+        while j >= 0 and ((order_type and array[j] > index) or (not order_type and array[j] < index)):
+            array[j + 1] = array[j]
             j -= 1
-        pole[j + 1] = index
-    return list(pole)
+        array[j + 1] = index
+    return list(array)
 
-pole = tuple([random.randint(0, 100) for _ in range(10)])
 
-# nesetridene pole
+array = tuple([random.randint(0, 100) for _ in range(10)])
+
+# Nesetridene pole
 print("Nesetridene pole:")
-print(pole)
+print(array)
 print("")
 
-# setridene pole pomoci Selection Sort
+# Setridene pole pomoci Selection Sort
 print("Setridene pole pomoci Selection Sort:")
-# setridene pole pomoci Selection Sort (jeden smer)
-print(selection_sort(pole, True))
-# setridene pole pomoci Selection Sort (druhy smer)
-print(selection_sort(pole, False))
+# Setridene pole pomoci Selection Sort (jeden smer)
+print(selection_sort(array, True))
+# Setridene pole pomoci Selection Sort (druhy smer)
+print(selection_sort(array, False))
 print("")
 
-# setridene pole pomoci Bubble Sort
+# Setridene pole pomoci Bubble Sort
 print("Setridene pole pomoci Bubble Sort:")
-# setridene pole pomoci Bubble Sort (jeden smer)
-print(bubble_sort(pole, True))
-# setridene pole pomoci Bubble Sort (druhy smer)
-print(bubble_sort(pole, False))
+# Setridene pole pomoci Bubble Sort (jeden smer)
+print(bubble_sort(array, True))
+# Setridene pole pomoci Bubble Sort (druhy smer)
+print(bubble_sort(array, False))
 print("")
 
-# setridene pole pomoci Insertion Sort
+# Setridene pole pomoci Insertion Sort
 print("Setridene pole pomoci Insertion Sort:")
-# setridene pole pomoci Insertion Sort (jeden smer)
-print(insertion_sort(pole, True))
-# setridene pole pomoci Insertion Sort (druhy smer)
-print(insertion_sort(pole, False))
+# Setridene pole pomoci Insertion Sort (jeden smer)
+print(insertion_sort(array, True))
+# Setridene pole pomoci Insertion Sort (druhy smer)
+print(insertion_sort(array, False))
