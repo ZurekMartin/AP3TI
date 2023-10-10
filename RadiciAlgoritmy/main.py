@@ -5,7 +5,7 @@ import random
 # Ukol 1: Radici algoritmy
 # Martin Zurek
 
-# Selection Sort
+# Selection Sort function
 def selection_sort(array, order_type):
     array = list(array)
     for i in range(len(array)):
@@ -21,7 +21,7 @@ def selection_sort(array, order_type):
     return list(array)
 
 
-# Bubble Sort
+# Bubble Sort function
 def bubble_sort(array, order_type):
     array = list(array)
     for i in range(len(array)):
@@ -35,7 +35,7 @@ def bubble_sort(array, order_type):
     return list(array)
 
 
-# Insertion Sort
+# Insertion Sort function
 def insertion_sort(array, order_type):
     array = list(array)
     for i in range(1, len(array)):
