@@ -2,9 +2,6 @@
 import random
 
 
-# Ukol 1: Radici algoritmy
-# Martin Zurek
-
 # Selection Sort function
 def selection_sort(array, order_type):
     array = list(array)
