@@ -3,9 +3,6 @@ import random
 import time
 
 
-# Ukol 2: Vypocetni slozitost
-# Martin Zurek
-
 # Selection Sort function
 def selection_sort(array):
     array = list(array)
