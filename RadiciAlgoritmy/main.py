@@ -49,30 +49,30 @@ def insertion_sort(array, order_type):
 
 array = tuple([random.randint(0, 100) for _ in range(10)])
 
-# Nesetridene pole
-print("Nesetridene pole:")
+# Unsorted array
+print("Unsorted array:")
 print(array)
 print("")
 
-# Setridene pole pomoci Selection Sort
-print("Setridene pole pomoci Selection Sort:")
-# Setridene pole pomoci Selection Sort (jeden smer)
+# Sorted array using Selection Sort
+print("Sorted array using Selection Sort:")
+# Sorted array using Selection Sort (ascending)
 print(selection_sort(array, True))
-# Setridene pole pomoci Selection Sort (druhy smer)
+# Sorted array using Selection Sort (descending)
 print(selection_sort(array, False))
 print("")
 
-# Setridene pole pomoci Bubble Sort
-print("Setridene pole pomoci Bubble Sort:")
-# Setridene pole pomoci Bubble Sort (jeden smer)
+# Sorted array using Bubble Sort
+print("Sorted array using Bubble Sort:")
+# Sorted array using Bubble Sort (ascending)
 print(bubble_sort(array, True))
-# Setridene pole pomoci Bubble Sort (druhy smer)
+# Sorted array using Bubble Sort (descending)
 print(bubble_sort(array, False))
 print("")
 
-# Setridene pole pomoci Insertion Sort
-print("Setridene pole pomoci Insertion Sort:")
-# Setridene pole pomoci Insertion Sort (jeden smer)
+# Sorted array using Insertion Sort
+print("Sorted array using Insertion Sort:")
+# Sorted array using Insertion Sort (ascending)
 print(insertion_sort(array, True))
-# Setridene pole pomoci Insertion Sort (druhy smer)
+# Sorted array using Insertion Sort (descending)
 print(insertion_sort(array, False))
