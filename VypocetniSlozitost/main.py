@@ -6,7 +6,7 @@ import time
 # Ukol 2: Vypocetni slozitost
 # Martin Zurek
 
-# Selection Sort
+# Selection Sort function
 def selection_sort(array):
     array = list(array)
     array_length = len(array)
@@ -19,7 +19,7 @@ def selection_sort(array):
     return list(array)
 
 
-# Bubble Sort
+# Bubble Sort function
 def bubble_sort(array):
     array = list(array)
     array_length = len(array)
@@ -30,7 +30,7 @@ def bubble_sort(array):
     return list(array)
 
 
-# Insertion Sort
+# Insertion Sort function
 def insertion_sort(array):
     array = list(array)
     array_length = len(array)
@@ -44,7 +44,7 @@ def insertion_sort(array):
     return list(array)
 
 
-# Stopwatch
+# Stopwatch function
 def stopwatch(function, array):
     start = time.time()
     function(array)
