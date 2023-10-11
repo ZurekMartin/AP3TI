@@ -7,6 +7,7 @@ Simple implementation of Selection Sort, Bubble Sort and Insertion Sort
 - selection sort with support for ascending and descending array sorting
 - bubble sort with support for ascending and descending array sorting
 - insertion sort with support for ascending and descending array sorting
+- formated output in terminal
 
 ## Time (computational) complexity
 Simple implementation of Selection Sort, Bubble Sort and Insertion Sort with time measuring function
