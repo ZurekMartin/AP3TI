@@ -18,3 +18,13 @@ Simple implementation of Selection Sort, Bubble Sort and Insertion Sort with tim
 - insertion sort
 - time measuring function
 - formated output in terminal
+
+## Recursion
+Simple implementation of recursive and iterative algorithms with time measuring function
+
+### Functionality
+- recursive and iterative factorial calculation
+- recursive and iterative Fibonacci sequence generation
+- recursive and iterative binary search
+- time measuring function
+- formatted output in plots
