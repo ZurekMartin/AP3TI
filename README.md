@@ -28,3 +28,12 @@ Simple implementation of recursive and iterative algorithms with time measuring 
 - recursive and iterative binary search
 - time measuring function
 - formatted output in plots
+
+## Finite automaton
+Simple implementation of DFA, NFA and e-NFA
+
+### Functionality
+- DFA
+- NFA
+- e-NFA
+- formated output in plots
