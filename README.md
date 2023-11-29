@@ -37,3 +37,11 @@ Simple implementation of DFA, NFA and e-NFA
 - NFA
 - e-NFA
 - formated output in plots
+
+## Regular expression
+Simple implementation that uses finite automaton to implement regular expression
+
+### Functionality
+- finite automaton creation
+- function to check if the input string format matches the regular expression
+- formated output in terminal
